@@ -1,0 +1,16 @@
+Steps: Put all queen positions into a Set to quickly check if a queen is at a certain square.
+Start from the king’s position and look in each of the 8 directions one square at a time:
+Move step-by-step in one direction.
+At each step, check: Is there a queen here?
+If yes, this queen can attack the king. Add her position to the answer.
+Then stop looking in that direction (queens can't jump over each other).
+If no queen is found, keep moving until you hit the edge of the board.
+Do this for all 8 directions.
+Return the list of queen 
+
+_______________________________________________________________
+
+N-Queens:
+
+9978 7261 4846
+
