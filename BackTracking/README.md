@@ -106,11 +106,9 @@ Because every character has two choices.
 
 ## Purpose
 
-This file likely contains:
+This file  contains:
 
-* Sample input/output
 * Problem explanation
-* Board representation
 * Notes for the N-Queens problem
 
 ---
