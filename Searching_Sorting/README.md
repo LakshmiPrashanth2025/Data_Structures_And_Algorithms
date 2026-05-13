@@ -45,11 +45,45 @@ Searching_Sorting/
 
 Implements the standard **Binary Search** algorithm on a sorted integer array.
 
+### Logic
+
+Binary Search works by repeatedly dividing the search space into two halves.
+
+1. Find the middle element of the array.
+2. Compare the middle element with the target.
+3. If the target is equal to the middle element, return the index.
+4. If the target is smaller, search in the left half.
+5. If the target is greater, search in the right half.
+6. Repeat until the element is found or the search space becomes empty.
+
+### Pseudocode
+
+```text
+start = 0
+end = array.length - 1
+
+while(start <= end)
+    mid = start + (end - start) / 2
+
+    if(array[mid] == target)
+        return mid
+
+    else if(target < array[mid])
+        end = mid - 1
+
+    else
+        start = mid + 1
+```
+
 ### Concepts Covered
 
 * Divide and Conquer
 * Iterative Binary Search
-* Time Complexity: `O(log n)`
+* Efficient searching in sorted arrays
+
+### Time Complexity
+
+`O(log n)`
 
 ---
 
